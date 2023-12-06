@@ -7,11 +7,11 @@ The JSX returned should consist of:
     - a p element with className attribute of "subtitle" and the inner text of "my name is"
     - a h2 element with className attribute of "name" and the inner text of your name
 */
-const NameTag = () => (
+const NameTag = (props) => (
   <div className="name-tag">
     <h3 className="title">HELLO</h3>
     <p className="subtitle">my name is</p>
-    <h2 className="name">Muneer</h2>
+    <h2 className="name">{props.name}</h2>
   </div>
 );
 
